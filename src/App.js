@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Switch, Link, NavLink } from "react-router-dom";
+import Calendar from "./Calendar"; 
+import NotePage from "./NotePage"; 
+import FishShortStory from "./FishShortStory"; 
+import PerfectAngleStory from "./PerfectAngleStory"; 
 
-function App() {
+import "./index.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename="/gelececk-appointment">
+      <div>
+        <nav>
+          <ul className="nav-links">
+            <li>
+              <NavLink to="/" exact activeClassName="active">
+                Calendar
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/note" activeClassName="active">
+                A Lil Note
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/fish-story" activeClassName="active">
+                Fish Short Story
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/angle-story" activeClassName="active">
+                Perfect Angle Story
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Calendar />} />
+          <Route path="/note" element={<NotePage />} />
+          <Route path="/fish-story" element={<FishShortStory />} /> 
+          <Route path="/angle-story" element={<PerfectAngleStory />} /> 
+
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

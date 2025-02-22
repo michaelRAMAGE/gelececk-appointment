@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Calendar Layout */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.day {
+  padding: 20px;
+  background-color: red;
+  text-align: center;
+  cursor: pointer; /* Make the red boxes clickable */
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change background color and add a hover effect */
+.day:hover {
+  background-color: darkred;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.day:active {
+  background-color: darkgreen; /* Change color when clicked */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Month selector styling */
+.month-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+select {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+/* Modal and Times */
+.times {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.time {
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: not-allowed;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Funny Message */
+.busy-message {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.day {
+  padding: 20px;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.day:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+.day:active {
+  background-color: darkgreen;
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on click */
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.nav-links a.active {
+  color: lightgreen; /* Highlight active link */
+}
+
+/* Optional: Page Layout */
+.note-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.note-page h1 {
+  color: #333;
 }

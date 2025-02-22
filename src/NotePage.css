@@ -1,0 +1,26 @@
+.note-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .note-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .note-container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .note-container p strong {
+    font-weight: bold;
+  }
+  
+  .note-container p em {
+    font-style: italic;
+  }  
