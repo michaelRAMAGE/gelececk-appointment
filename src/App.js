@@ -4,6 +4,7 @@ import Calendar from "./Calendar";
 import NotePage from "./NotePage"; 
 import FishShortStory from "./FishShortStory"; 
 import PerfectAngleStory from "./PerfectAngleStory"; 
+import GettinFoodStory from "./GettinFoodStory"; 
 
 import "./index.css";
 
@@ -33,6 +34,11 @@ const App = () => {
                 Perfect Angle Story
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/food-story" activeClassName="active">
+                Food Story
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -41,7 +47,7 @@ const App = () => {
           <Route path="/note" element={<NotePage />} />
           <Route path="/fish-story" element={<FishShortStory />} /> 
           <Route path="/angle-story" element={<PerfectAngleStory />} /> 
-
+          <Route path="/food-story" element={<GettinFoodStory />} /> 
         </Routes>
       </div>
     </Router>
