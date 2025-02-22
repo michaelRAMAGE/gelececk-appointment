@@ -98,7 +98,7 @@ const Calendar = () => {
             );
           })}
         </div>
-        <button onClick={closeModal}>Close</button>
+        <button className="close-button" onClick={closeModal}>CLOSE</button>
       </ReactModal>
     </div>
   );

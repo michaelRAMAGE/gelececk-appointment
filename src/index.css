@@ -73,7 +73,7 @@ button {
 .busy-message {
   font-style: italic;
   margin-bottom: 15px;
-  color: #333;
+  color: #900000;
   text-align: center;
   font-size: 1.1rem;
 }
@@ -143,4 +143,29 @@ nav {
 
 .note-page h1 {
   color: #333;
+}
+
+/* Style the close button on the day */
+.close-button {
+  font-size: 1.5rem;  /* Increase the font size */
+  padding: 10px 20px;  /* Increase the padding to make the button larger */
+  background-color: #ff4d4d;  /* Red background for better contrast */
+  color: white;  /* White text for contrast */
+  border: none;  /* Remove border */
+  border-radius: 50%;  /* Make the button round */
+  cursor: pointer;  /* Make it clear the button is clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Add smooth transitions */
+  margin-top: 10px;  /* Add top margin to give spacing from the date box */
+}
+
+/* Style the button when hovered over */
+.close-button:hover {
+  background-color: #ff0000;  /* Darker red on hover */
+  transform: scale(1.1);  /* Slightly enlarge the button on hover */
+}
+
+/* Style the button when focused (for accessibility) */
+.close-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.5);  /* Add a glow effect around the button */
 }
