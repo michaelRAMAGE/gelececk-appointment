@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gelececk-appointment/static/css/main.183aa9a6.css",
-    "main.js": "/gelececk-appointment/static/js/main.e36869c7.js",
+    "main.js": "/gelececk-appointment/static/js/main.81b834c5.js",
     "static/js/453.4fdfdb7e.chunk.js": "/gelececk-appointment/static/js/453.4fdfdb7e.chunk.js",
     "index.html": "/gelececk-appointment/index.html",
     "main.183aa9a6.css.map": "/gelececk-appointment/static/css/main.183aa9a6.css.map",
-    "main.e36869c7.js.map": "/gelececk-appointment/static/js/main.e36869c7.js.map",
+    "main.81b834c5.js.map": "/gelececk-appointment/static/js/main.81b834c5.js.map",
     "453.4fdfdb7e.chunk.js.map": "/gelececk-appointment/static/js/453.4fdfdb7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.183aa9a6.css",
-    "static/js/main.e36869c7.js"
+    "static/js/main.81b834c5.js"
   ]
 }
