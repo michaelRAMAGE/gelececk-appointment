@@ -4,9 +4,11 @@ import Calendar from "./Calendar";
 import NotePage from "./NotePage"; 
 import FishShortStory from "./FishShortStory"; 
 import PerfectAngleStory from "./PerfectAngleStory"; 
-import GettinFoodStory from "./GettinFoodStory"; 
+import GettinFoodStory from "./GettinFoodStory";
+import MissYouPage from "./MissYouPage"; 
 
 import "./index.css";
+import MissYouPage from "./MissYouPage";
 
 const App = () => {
   return (
@@ -16,6 +18,11 @@ const App = () => {
           <ul className="nav-links">
             <li>
               <NavLink to="/" exact activeClassName="active">
+                Miss You
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/calendar" activeClassName="active">
                 Calendar
               </NavLink>
             </li>
@@ -43,7 +50,8 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Calendar />} />
+          <Route path="/" element={<MissYouPage />} />
+          <Route path="/calendar" element={<Calendar />} />
           <Route path="/note" element={<NotePage />} />
           <Route path="/fish-story" element={<FishShortStory />} /> 
           <Route path="/angle-story" element={<PerfectAngleStory />} /> 
