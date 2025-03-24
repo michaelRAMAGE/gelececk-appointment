@@ -8,7 +8,6 @@ import GettinFoodStory from "./GettinFoodStory";
 import MissYouPage from "./MissYouPage"; 
 
 import "./index.css";
-import MissYouPage from "./MissYouPage";
 
 const App = () => {
   return (
